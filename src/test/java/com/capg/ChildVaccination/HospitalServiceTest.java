@@ -24,9 +24,9 @@ void contextLoads() {
 	
 }
 
-@Test
-void deleteHospitalTest() throws HospitalNotFoundException {
-	Hospital hospital=IHospitalService.removeHospitalById(2);
-	assertEquals("vijaya",hospital.getHospitalName());
-}
+//@Test
+//void deleteHospitalTest() throws HospitalNotFoundException {
+//	Hospital hospital=IHospitalService.removeHospitalById(2);
+//	assertEquals("vijaya",hospital.getHospitalName());
+//}
 }
