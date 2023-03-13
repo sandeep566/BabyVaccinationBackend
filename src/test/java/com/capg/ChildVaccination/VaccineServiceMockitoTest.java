@@ -56,14 +56,14 @@ class VaccineServiceMockitoTest {
 		
 		Vaccine vaccine=new Vaccine();
 		
-		vaccine.setVaccineId(2);
-	vaccine.setVaccineName("bcg");
+		vaccine.setVaccineId(1);
+	vaccine.setVaccineName("BCG");
 		
-		Mockito.when(vaccineRepo.findById(2)).thenReturn(Optional.of(vaccine));
+		Mockito.when(vaccineRepo.findById(1)).thenReturn(Optional.of(vaccine));
 		
-		Vaccine vaccine1= vaccineService.getVaccinebyId(2);
-		assertEquals(2,vaccine1.getVaccineId());
-		assertEquals("bcg",vaccine1.getVaccineName());
+		Vaccine vaccine1= vaccineService.getVaccinebyId(1);
+		assertEquals(1,vaccine1.getVaccineId());
+		assertEquals("BCG",vaccine1.getVaccineName());
 	
 
 		
