@@ -45,9 +45,9 @@ class HospitalRepositoryTest {
 		
 		@Test
 		void findHospitalByIdTest() {
-			Optional<Hospital> hospital=hospitalRepo.findById(6);
+			Optional<Hospital> hospital=hospitalRepo.findById(1);
 			Hospital hospital1=hospital.get();
-			assertEquals("vijaya",hospital1.getHospitalName());
+			assertEquals("vydehi",hospital1.getHospitalName());
 		}
 		
 		
@@ -55,8 +55,8 @@ class HospitalRepositoryTest {
 	@Test
 	void getAllHospitalTest() {
 			List<Hospital> hospital = (List<Hospital>) hospitalRepo.findAll();
-			assertEquals(2,hospital.size());
+			assertEquals(1,hospital.size());
 		Hospital hospital1=hospital.get(0);
-		assertEquals("vijaya",hospital1.getHospitalName());
+		assertEquals("vydehi",hospital1.getHospitalName());
 		}
 }
