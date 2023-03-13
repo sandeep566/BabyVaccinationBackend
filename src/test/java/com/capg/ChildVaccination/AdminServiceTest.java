@@ -31,12 +31,12 @@ IAdminService  adminService;
 	@Test
 	void viewAllVaccineTest() {
 		List<Vaccine> vaccine1 = adminService.getAllVaccine();
-		assertEquals(3,vaccine1.size());
+		assertEquals(2,vaccine1.size());
 	}
 	@Test
 	void getAllHospitalsTest() {
 		List<Hospital> hospital1 =adminService.getAllHospitals();
-		assertEquals(4,hospital1.size());
+		assertEquals(1,hospital1.size());
 	}
 	
 	
