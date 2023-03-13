@@ -56,14 +56,14 @@ class HospitalServiceMockitoTest {
 		
 		Hospital hospital=new Hospital();
 		
-		hospital.setHospitalid(7);
-	hospital.setHospitalName("vijaya");
+		hospital.setHospitalid(1);
+	hospital.setHospitalName("vydehi");
 		
-		Mockito.when(hospitalRepo.findById(7)).thenReturn(Optional.of(hospital));
+		Mockito.when(hospitalRepo.findById(1)).thenReturn(Optional.of(hospital));
 		
-		Hospital hospital1= hospitalService.viewHospital(7);
-		assertEquals(7,hospital.getHospitalid());
-		assertEquals("vijaya",hospital1.getHospitalName());
+		Hospital hospital1= hospitalService.viewHospital(1);
+		assertEquals(1,hospital.getHospitalid());
+		assertEquals("vydehi",hospital1.getHospitalName());
 	
 
 		
